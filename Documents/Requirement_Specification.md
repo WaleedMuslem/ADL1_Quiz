@@ -34,6 +34,10 @@ Starting from the user logging on the application to access the list of availabl
 ## User Needs
 To use this web page, user needs to find the web page in any browser by using the name of the page, then the user can see the front of the web page which has a sign up and log in place so in order to register the user need to fill out his/her username which is email and enter password than log in.
 
+When a user logs in he/she can see the main page of the web application.
+then the user can see the quizzes and choose one and solve it,then the result should appear 
+
+
 
 ## Current business flow model
 
