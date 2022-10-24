@@ -19,3 +19,6 @@ Data requirements must be accurate, reliable and true. When you make an action r
 
 Time characteristics.
 In order to meet the user's efficiency requirements, the response time of the data, the update processing time, the data conversion and transmission time, the running time should be within 1-5 seconds. When you need to interact with an external device, such as a printer, the response time may be longer, but it should be within acceptable limits.
+
+## Goal
+Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
