@@ -38,36 +38,42 @@ Score, time of departure.
  * Check answers 
  * REGISTER FOR quiz
  * EXIT
- * <H4>List Of Requirements: </H4>
+
+<H4>List Of Requirements: </H4>
 <table> 
   <tr>
-    <th>Requirement number</th>
-    <th>Requirement title</th> 
-    <th>Requirement description</th>
-</tr>
-<tr>
-    <th>N01</th>
-    <th>Search</th>
-  <th>The search function get the information from database according to the Data inputed.</th>
-</tr>
-<tr>
-    <th>N02</th>
-    <th>login</th>
-  <th>The login function let user login according to information from database.</th>
-</tr>
+     <th>Requirement number</th>
+     <th>Requirement title</th> 
+     <th>Requirement description</th>
+  </tr>
   <tr>
-    <th>N03</th>
-    <th>logout</th>
- <th> The login function let user login according to information from database.</th>
-    <tr>
-    <th>N04</th>
-    <th>sign up </th>
-    <th> The sign up function add user information to database.</th>
-      <tr>
+     <th>N01</th>
+     <th>Search</th>
+     <th>The search function get the information from database according to the Data inputed.</th>
+  </tr>
+  <tr>
+     <th>N02</th>
+     <th>login</th>
+     <th>The login function let user login according to information from database.</th>
+  </tr>
+  <tr>
+     <th>N03</th>
+     <th>logout</th>
+     <th> The login function let user login according to information from database.</th>
+  </tr>
+  <tr>
+     <th>N04</th>
+     <th>sign up </th>
+     <th> The sign up function add user information to database.</th>
+  </tr>
+  <tr>
       <th>N05</th>
-    <th>Choose a quiz</th>
-  <th>The function that gets the stored information from the database and returns a set of questions with answers.</th>
-  <th>N05</th>
-    <th>Choose an answer</th>
-  <th>The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database</th>
-</tr>
+      <th>Choose a quiz</th>
+      <th>The function that gets the stored information from the database and returns a set of questions with answers</th>
+  </tr>
+  <tr>
+      <th>N06</th>
+      <th>Choose an answer</th>
+      <th>The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database</th>
+  </tr>
+  </table>
