@@ -1,4 +1,4 @@
-## Requirement specification
+## Requirement Specification
 ## **Introduction**
 
 1. Project name
@@ -12,4 +12,7 @@
 9. Goal
 10. Glossary
 11. Other requirements
+
+## Project name
+The project name is : QUIZ 
 
