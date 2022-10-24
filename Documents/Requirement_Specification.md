@@ -16,6 +16,20 @@
 ## Project name
 The project name is : QUIZ 
 
+## Purpose
+
+The purpose of the project is to make a website that will let the user create an account on which he will gain access to the features of our website.
+
+We chose Visual Studio Code"VSCode" as a text editor or an IDE to use and make our project not only because it is simple and straight forward to work on, but very familiar for us to work with too as we already managed projects with its help in the past.
+
+Our web application can let the user create his/her own account which grants access to the index page where all of the available content will be displaced for choice. The user will be able to resolve different quizzes and see his results upon completing them.
+
+## Intended audience
+Intended to be used by anyone who is interested in resolving quizzes of different difficulties composed of a multitude of questions on a plethora of topics.
+
+The types of questionnaires differ on the type of their content, for example: economic, politic, scientific, sport-related etc. They also can be of various difficulties, having questions from basic to advanced levels.
+
+Starting from the user logging on the application to access the list of available quizzes to complete then choosing the one they want to and getting redirected to the page with its content, and ending with the detailed designing of the pages, everything should be not only functionally plausible, but aesthetically pleasing for the connected users too.
 
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
@@ -25,5 +39,3 @@ The goal of this program is to provide participants with the necessary skills to
 We also want to make sure that the application is not only about the manipulation of the experience, but also the ease of use of the website. This is because if a user enjoys the design and is able to navigate the site easily, it can be considered a success.
 
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
-
-
