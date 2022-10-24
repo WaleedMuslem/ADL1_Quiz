@@ -43,3 +43,15 @@ The goal of this program is to provide participants with the necessary skills to
 We also want to make sure that the application is not only about the manipulation of the experience, but also the ease of use of the website. This is because if a user enjoys the design and is able to navigate the site easily, it can be considered a success.
 
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
+
+## Non-functionary requirements 
+   
+Performance: The app must not lag hard enough to affect the user's performance.
+   
+Safety: The work of our app must not affect the user's PC in any negative way.
+   
+Security: Try our best to avoid program abuse so no saved data could be stolen from the database.
+
+Quality: This app should have good UI, high efficiency and fun quizzes.
+   
+Availability: This app must be available in all recognized countries of our planet, and thus, should respect lots of laws.
