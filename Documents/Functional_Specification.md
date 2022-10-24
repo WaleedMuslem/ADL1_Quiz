@@ -28,3 +28,46 @@ The goal of this program is to provide participants with the necessary skills to
 We also want to make sure that the application is not only about the manipulation of the experience, but also the ease of use of the website. This is because if a user enjoys the design and is able to navigate the site easily, it can be considered a success.
 
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
+
+# REPORTS
+• REPORT MODULE
+
+The log in issued should have the details such as username ,gmail,
+Score, time of departure. 
+ * Quiz questions
+ * Check answers 
+ * REGISTER FOR quiz
+ * EXIT
+ * <H4>List Of Requirements: </H4>
+<table> 
+  <tr>
+    <th>Requirement number</th>
+    <th>Requirement title</th> 
+    <th>Requirement description</th>
+</tr>
+<tr>
+    <th>N01</th>
+    <th>Search</th>
+  <th>The search function get the information from database according to the Data inputed.</th>
+</tr>
+<tr>
+    <th>N02</th>
+    <th>login</th>
+  <th>The login function let user login according to information from database.</th>
+</tr>
+  <tr>
+    <th>N03</th>
+    <th>logout</th>
+ <th> The login function let user login according to information from database.</th>
+    <tr>
+    <th>N04</th>
+    <th>sign up </th>
+    <th> The sign up function add user information to database.</th>
+      <tr>
+      <th>N05</th>
+    <th>Choose a quiz</th>
+  <th>The function that gets the stored information from the database and returns a set of questions with answers.</th>
+  <th>N05</th>
+    <th>Choose an answer</th>
+  <th>The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database</th>
+</tr>
