@@ -31,6 +31,10 @@ The types of questionnaires differ on the type of their content, for example: ec
 
 Starting from the user logging on the application to access the list of available quizzes to complete then choosing the one they want to and getting redirected to the page with its content, and ending with the detailed designing of the pages, everything should be not only functionally plausible, but aesthetically pleasing for the connected users too.
 
+## User Needs
+To use this web page, user needs to find the web page in any browser by using the name of the page, then the user can see the front of the web page which has a sign up and log in place so in order to register the user need to fill out his/her username which is email and enter password than log in.
+
+
 ## Current business flow model
 
 Currently internet quizzes are far better than the real ones, as they don't require paper and don't create a hassle if they are being conducted in a speech. Because of this, there already exist lots of websites that either implemented quizzes or fully consist of quizzes. The market seems flooded, but the quiz website face a downside that equally grounds them at the same level - the lack of advertisements, which in turn makes those services seemingly unknown and easily rivaled in terms of popularity.
