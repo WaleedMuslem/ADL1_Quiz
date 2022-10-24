@@ -1,3 +1,8 @@
+## Script
+User will be able to see the available quizzes however He/She can not take it until register ,So the user will need to register through the signup button. And after their login,they can take the quizzes and answer and see the score.
+
+The website be only a static website and nothing is dynamic,and user may still log out.
+
 # List Of Requirements
 
 login - The login function let user login according to information from database.
