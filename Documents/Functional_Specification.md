@@ -62,7 +62,7 @@ We also want to make sure that the application is not only about the manipulatio
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
 
 ## Constrains:
-
+Design Constraints imposes limitations on the following things:
 
 # REPORTS
 • REPORT MODULE
