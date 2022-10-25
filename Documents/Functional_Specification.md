@@ -70,6 +70,8 @@ The operating system : Microsoft Windows 10.
 
 The programming language, databases, coding standards,business logic, etc.
 
+The programming language, HTML,CSS,PHP.
+
 # REPORTS
 • REPORT MODULE
 
