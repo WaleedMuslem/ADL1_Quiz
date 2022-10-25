@@ -66,6 +66,8 @@ Design Constraints imposes limitations on the following things:
 
 The running environment : Microsoft Visual Studio Code.
 
+The operating system : Microsoft Windows 10.
+
 # REPORTS
 • REPORT MODULE
 
