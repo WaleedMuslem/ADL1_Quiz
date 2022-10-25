@@ -64,6 +64,8 @@ The team members must work together to make sure that the application can demons
 ## Constrains:
 Design Constraints imposes limitations on the following things:
 
+The running environment : Microsoft Visual Studio Code.
+
 # REPORTS
 • REPORT MODULE
 
