@@ -68,6 +68,8 @@ The running environment : Microsoft Visual Studio Code.
 
 The operating system : Microsoft Windows 10.
 
+The programming language, databases, coding standards,business logic, etc.
+
 # REPORTS
 • REPORT MODULE
 
