@@ -39,6 +39,9 @@ Choose an answer - The function that checks weather the chosen option is the rig
 The interface will be a not so complicated one, a simple login screen and logout and sign up and Search
  and a dashboard that will have buttons such as: About, Contact Us.
 
+ A bit of explanation about web designing.our user can simply click these buttons and the website will
+  give reaction,this website is a total static website so there is no many user interface
+
 ![UI plan](../image/UI.jpg "UI plan")
 
 # How the system should be and what it should not be?  
