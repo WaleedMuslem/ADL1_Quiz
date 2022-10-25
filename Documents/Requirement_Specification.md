@@ -59,7 +59,9 @@ so the project will be a very simple one.
 ## Current situation
 As it is known that advances in technology and the rapid delivery of quiz to all parts of the world ,
  so we came up with this idea to create a website specialized in publishing quizs.
+
  We have decided what the project will look like and have a team of 3 people working on it.
+
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
 
@@ -68,6 +70,8 @@ The goal of this program is to provide participants with the necessary skills to
 We also want to make sure that the application is not only about the manipulation of the experience, but also the ease of use of the website. This is because if a user enjoys the design and is able to navigate the site easily, it can be considered a success.
 
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
+
+## Glossary
 
 ## Non-functionary requirements 
    
