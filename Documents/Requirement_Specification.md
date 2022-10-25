@@ -48,6 +48,9 @@ and some other compiler would also be fine for us, css and html will be the main
 
 Currently internet quizzes are far better than the real ones, as they don't require paper and don't create a hassle if they are being conducted in a speech. Because of this, there already exist lots of websites that either implemented quizzes or fully consist of quizzes. The market seems flooded, but the quiz website face a downside that equally grounds them at the same level - the lack of advertisements, which in turn makes those services seemingly unknown and easily rivaled in terms of popularity.
 
+## Project outline
+
+
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
 
