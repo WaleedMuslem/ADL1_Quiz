@@ -80,6 +80,9 @@ be displayed in a web browser. It can be assisted by technologies such as Cascad
  language such as HTML, CSS is a cornerstone technology of the World Wide Web,
  alongside HTML and JavaScript.
 
+ PHP: Hypertext Preprocessor ,or PHP is a general-purpose scripting language geared toward web
+  development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994.
+
 ## Non-functionary requirements 
    
 Performance: The app must not lag hard enough to affect the user's performance.
