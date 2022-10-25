@@ -72,6 +72,9 @@ We also want to make sure that the application is not only about the manipulatio
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
 
 ## Glossary
+HTML: The HyperText Markup Language, or HTML is the standard markup language for documents designed to 
+be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS)
+ and scripting languages such as JavaScript.
 
 ## Non-functionary requirements 
    
