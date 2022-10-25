@@ -35,6 +35,8 @@ Choose a quiz - The function that gets the stored information from the database 
 
 Choose an answer - The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database.
 
+## UI Plan
+
 ![UI plan](../image/UI.jpg "UI plan")
 
 # How the system should be and what it should not be?  
