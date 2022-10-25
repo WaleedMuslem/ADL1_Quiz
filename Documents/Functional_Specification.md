@@ -36,6 +36,8 @@ Choose a quiz - The function that gets the stored information from the database 
 Choose an answer - The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database.
 
 ## UI Plan
+The interface will be a not so complicated one, a simple login screen and logout and sign up and Search
+ and a dashboard that will have buttons such as: About, Contact Us.
 
 ![UI plan](../image/UI.jpg "UI plan")
 
