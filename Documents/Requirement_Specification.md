@@ -37,7 +37,8 @@ To use this web page, user needs to find the web page in any browser by using th
 When a user logs in he/she can see the main page of the web application.
 then the user can see the quizzes and choose one and solve it,then the result should appear 
 
-
+## System rules, patterns, recommendations
+For this project we will use HTML and CSS and PHP for the front in ,
 
 ## Current business flow model
 
