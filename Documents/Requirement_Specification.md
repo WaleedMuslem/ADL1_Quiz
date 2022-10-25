@@ -39,7 +39,8 @@ then the user can see the quizzes and choose one and solve it,then the result sh
 
 ## System rules, patterns, recommendations
 For this project we will use HTML and CSS and PHP for the front in ,
-basically for create a web page , for every problem
+basically for create a web page , for every problem ,
+we meet , we will try to find good solution for it
 
 ## Current business flow model
 
