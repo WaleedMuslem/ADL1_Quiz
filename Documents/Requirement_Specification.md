@@ -59,7 +59,7 @@ so the project will be a very simple one.
 ## Current situation
 As it is known that advances in technology and the rapid delivery of quiz to all parts of the world ,
  so we came up with this idea to create a website specialized in publishing quizs.
- 
+ We have decided what the project will look like and have a team of 3 people working on it.
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
 
