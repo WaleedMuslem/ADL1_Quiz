@@ -18,6 +18,9 @@ Main causes for concern would be to get the full working application out as soon
 
 The appearance of the website can be changed as the team feels.
 
+## Maintenance Plan
+Since the interface was designed to be as dynamic as possible, the only part of the web that could require maintenance is the data API itself. This information can easily be changed by adjusting a single variable in the code,our teammate will do the mainly maintenance and fix bug.
+
 ## Open Questions
 Any open issues that you aren't sure about, contentious decisions that you'd like readers to weigh in on, suggested future work, and so on.
 
