@@ -18,6 +18,9 @@ Main causes for concern would be to get the full working application out as soon
 
 The appearance of the website can be changed as the team feels.
 
+## Testing Plan
+during test strategy,we need to test every function one by one,including system testing the tester should have the ability to understand customers point of view,then we should test the whole program,the goal is to test the whole program to see what will happen, if anything unexpected occurs ,then we need to fix them.
+
 ## Maintenance Plan
 Since the interface was designed to be as dynamic as possible, the only part of the web that could require maintenance is the data API itself. This information can easily be changed by adjusting a single variable in the code,our teammate will do the mainly maintenance and fix bug.
 
