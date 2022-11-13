@@ -17,3 +17,10 @@ Any remaining time can be spent on making the website look better.
 Main causes for concern would be to get the full working application out as soon as possible to comply with deadlines and get our grades.
 
 The appearance of the website can be changed as the team feels.
+
+## Open Questions
+Any open issues that you aren't sure about, contentious decisions that you'd like readers to weigh in on, suggested future work, and so on.
+
+A tongue-in-cheek name for this section is the 'known unknowns'.
+
+we would like to welcome any suggestion that can improve our working environment and the webpage design.
