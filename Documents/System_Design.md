@@ -11,3 +11,9 @@ The team members must work together to make sure that the application can demons
 
 ## Context
 Everyone at this time has the required knowledge to make this project work, we would like to see all pages implemented at the end of November and having all the functionality at the first of December.
+
+Any remaining time can be spent on making the website look better.
+
+Main causes for concern would be to get the full working application out as soon as possible to comply with deadlines and get our grades.
+
+The appearance of the website can be changed as the team feels.
