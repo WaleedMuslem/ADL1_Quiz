@@ -1,7 +1,8 @@
 ## System Design
 ========
 ## Introduction
-
+In recent years, with the development of the Internet, the application of network technology has been deepened, web page production and website construction
+have become more and more popular, and various web pages and website construction software have emerged one after another.
 
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
