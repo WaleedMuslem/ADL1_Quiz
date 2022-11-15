@@ -71,3 +71,7 @@ Any open issues that you aren't sure about, contentious decisions that you'd lik
 A tongue-in-cheek name for this section is the 'known unknowns'.
 
 we would like to welcome any suggestion that can improve our working environment and the webpage design.
+
+## User Case Diagram
+
+ ![UI plan](../image/User_Case%20Quiz.jpg "UI plan")
