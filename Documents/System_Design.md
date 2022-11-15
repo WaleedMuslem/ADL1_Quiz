@@ -10,6 +10,9 @@ Whether the webpage is made and designed exquisitely, whether it is rich in cont
 
 Web page design and production is one of the basic skills that need to be mastered when reading news online.
 
+
+__Project name__ : **Quiz App**
+
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
 
