@@ -39,6 +39,19 @@ Main causes for concern would be to get the full working application out as soon
 
 The appearance of the website can be changed as the team feels.
 
+## Design
+Page planning: Front presentation: home page, about page,search, register, login.
+
+Home page would contain some description.
+
+About page would describe something in detail.
+
+Register page will help user register in the website.
+
+Login page will help user login into this page.
+
+And we will use a random database to finish this program.
+
 ## Testing Plan
 during test strategy,we need to test every function one by one,including system testing the tester should have the ability to understand customers point of view,then we should test the whole program,the goal is to test the whole program to see what will happen, if anything unexpected occurs ,then we need to fix them.
 
