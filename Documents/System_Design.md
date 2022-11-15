@@ -52,6 +52,13 @@ Login page will help user login into this page.
 
 And we will use a random database to finish this program.
 
+## Architectural plan
+The application's design is created via HTML and CSS. 
+The HTML contains wrapper classes and classes have boxes where user can type username and password into it and
+there are also some buttons which can share this website to other friends.
+then we have some taps which show user different topics of other information As it is a static webpage ,you can do fresh which can fresh the whole webpage.
+
+
 ## Testing Plan
 during test strategy,we need to test every function one by one,including system testing the tester should have the ability to understand customers point of view,then we should test the whole program,the goal is to test the whole program to see what will happen, if anything unexpected occurs ,then we need to fix them.
 
