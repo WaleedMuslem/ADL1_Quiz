@@ -14,6 +14,12 @@ Web page design and production is one of the basic skills that need to be master
 __Project name__ : **Quiz App**
 
 ## Overview
+The team is using html to develop a web page where users can log in and register.
+
+A high level summary that every engineer at the company should understand and use to decide if it's useful for them to read the rest of the doc. 
+
+It should be 3 paragraphs max.we will create a useful system design and help our teammate understand how this program usually work ,and we will make this document as helpful as we can.
+
 
 ## Goal
 Getting used to working in a project is one of the most important steps that a person should take when they start working in the software industry. There are a variety of tools that can help them manage their projects, such as Git, Trello, and GitLab.
