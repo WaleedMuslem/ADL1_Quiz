@@ -248,3 +248,21 @@ hr{
     opacity: calc(100%);
 
 }
+/*upload image */
+label .img_pro {
+    display: fixed;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.img_pro{
+    margin: .4rem 0;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+input.img_pro:hover{
+    color: rgb(255, 255, 255);
+    color: #8854c0;
+    opacity: calc(100%);
+}
