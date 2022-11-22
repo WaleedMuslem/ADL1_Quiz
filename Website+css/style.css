@@ -21,3 +21,23 @@ header{
     height: 56px;
     padding: 0 16px;
 }
+.left_section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left_section .long{
+    background-color: #8854c0;
+    border-radius: 50%;
+}
+
+.left_section img{
+    width: 16%;
+    padding-left: 16px;
+}
+
+.mid_section{
+    display: flex;
+    align-items: center;
+    margin-left: -9%;
+}
