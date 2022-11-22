@@ -64,4 +64,14 @@
             </nav>
         </aside>
 
-    </body>
+        <main>
+            <dive class="quizs_area">
+                <div class="quiz">
+                    
+                </div>
+
+            </dive>
+        </main>
+    </div>
+    
+</body>
