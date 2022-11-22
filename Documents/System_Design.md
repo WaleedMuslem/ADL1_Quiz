@@ -18,7 +18,7 @@ The team is using html to develop a web page where users can log in and register
 
 A high level summary that every engineer at the company should understand and use to decide if it's useful for them to read the rest of the doc. 
 
-It should be 3 paragraphs max.we will create a useful system design and help our teammate understand how this program usually work ,and we will make this document as helpful as we can.
+It should be 3 paragraphs max. We will create a useful system design and help our teammate understand how this program usually work ,and we will make this document as helpful as we can.
 
 
 ## Goal
@@ -40,7 +40,7 @@ Main causes for concern would be to get the full working application out as soon
 The appearance of the website can be changed as the team feels.
 
 ## Design
-Page planning: Front presentation: home page, about page,search, register, login.
+Page planning: Front presentation: home page, about page, search, register, login.
 
 Home page would contain some description.
 
@@ -60,7 +60,7 @@ then we have some taps which show user different topics of other information As 
 
 
 ## Testing Plan
-during test strategy,we need to test every function one by one,including system testing the tester should have the ability to understand customers point of view,then we should test the whole program,the goal is to test the whole program to see what will happen, if anything unexpected occurs ,then we need to fix them.
+during test strategy, we need to test every function one by one,including system testing the tester should have the ability to understand customers point of view, then we should test the whole program, the goal is to test the whole program to see what will happen, if anything unexpected occurs, then we need to fix them.
 
 ## Maintenance Plan
 Since the interface was designed to be as dynamic as possible, the only part of the web that could require maintenance is the data API itself. This information can easily be changed by adjusting a single variable in the code,our teammate will do the mainly maintenance and fix bug.
