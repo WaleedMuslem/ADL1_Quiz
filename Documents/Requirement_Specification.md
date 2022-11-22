@@ -22,7 +22,7 @@ The purpose of the project is to make a website that will let the user create an
 
 We chose Visual Studio Code"VSCode" as a text editor or an IDE to use and make our project not only because it is simple and straight forward to work on, but very familiar for us to work with too as we already managed projects with its help in the past.
 
-Our web application can let the user create his/her own account which grants access to the index page where all of the available content will be displaced for choice. The user will be able to resolve different quizzes and see his results upon completing them.
+Our web application can let the user create his/her own account which grants access to the index page where all of the available content will be displaced for choice. The user will be able to solve different quizzes and see his results upon completing them.
 
 ## Intended audience
 Intended to be used by anyone who is interested in resolving quizzes of different difficulties composed of a multitude of questions on a plethora of topics.
@@ -38,7 +38,7 @@ When a user logs in he/she can see the main page of the web application.
 then the user can see the quizzes and choose one and solve it,then the result should appear 
 
 ## System rules, patterns, recommendations
-For this project we will use HTML and CSS and PHP for the front in ,
+For this project we will use HTML and CSS for the front-end while php for the back-end  ,
 basically for create a web page , for every problem ,
 we meet , we will try to find good solution for it ,
 we will try to use good technology, such as visual studio code ,
