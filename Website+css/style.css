@@ -81,3 +81,31 @@ header{
     margin-left: 10px;
     cursor: pointer;
 }
+.right_section a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    background-color: #8854c0;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.content-area{
+    height: calc(100vh - 56px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+
+aside{
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+}
