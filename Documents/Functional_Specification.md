@@ -61,26 +61,26 @@ We also want to make sure that the application is not only about the manipulatio
 
 The team members must work together to make sure that the application can demonstrate their skills in data manipulation and provide an enjoyable and easy-to-use experience. They should also show how they can work as a team.
 
-## Constrains:
+## Constrains
 Design Constraints imposes limitations on the following things:
 
 The running environment : Microsoft Visual Studio Code.
 
 The operating system : Microsoft Windows 10.
 
-The programming language, databases, coding standards,business logic, etc.
+The programming language, databases, coding standards, business logic, etc.
 
-The programming language, HTML,CSS,PHP.
+The programming language, HTML, CSS, PHP.
 
 # REPORTS
-• REPORT MODULE
 
-The log in issued should have the details such as username ,gmail,
-Score, time of departure. 
+
+The log in issued should have the details such as username, gmail, score, time of departure. 
+ * Report module
  * Quiz questions
  * Check answers 
- * REGISTER FOR quiz
- * EXIT
+ * Register for quiz
+ * Exit
 
 <H4>List Of Requirements: </H4>
 <table> 
@@ -102,7 +102,7 @@ Score, time of departure.
   <tr>
      <th>N03</th>
      <th>logout</th>
-     <th> The login function let user login according to information from database.</th>
+     <th> The login function let user logout according to information from database.</th>
   </tr>
   <tr>
      <th>N04</th>
@@ -117,6 +117,6 @@ Score, time of departure.
   <tr>
       <th>N06</th>
       <th>Choose an answer</th>
-      <th>The function that checks weather the chosen option is the right one by comparing it to the answer that is stored in the database</th>
+      <th>The function that checks wither the chosen option is the right one by comparing it to the answer that is stored in the database</th>
   </tr>
   </table>
