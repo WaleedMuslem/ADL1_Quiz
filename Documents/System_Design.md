@@ -52,6 +52,10 @@ Login page will help user login into this page.
 
 And we will use a random database to finish this program.
 
+## DataBase Design
+
+![UI plan](../image/Database_diagram.jpg)
+
 ## Architectural plan
 The application's design is created via HTML and CSS. 
 The HTML contains wrapper classes and classes have boxes where user can type username and password into it and
