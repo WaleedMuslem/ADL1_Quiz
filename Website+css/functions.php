@@ -33,7 +33,7 @@ function confirm_query($result_set) {
 }
 
 function login($connection, $email, $password){
-    $username = mysqli_real_escape_string($connection, $_POST['username']);
+   /* $username = mysqli_real_escape_string($connection, $_POST['username']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $password = mysqli_real_escape_string($connection, $_POST['password']);
 
@@ -58,49 +58,51 @@ function login($connection, $email, $password){
         } else {
             array_push($errors, "Wrong username or password. Try again");
         }
-    }
+    }*/
+    $password = md5($password);
+    $query = "SELECT * from users WHERE email = $email and password = $password";
+    $result = $connection->query($query);
+    return $result;
 }
 
 function register($connection, $username, $email, $password_1, $password_2){
-    $username = mysqli_real_escape_string($connection, $_POST['username']);
-    $email = mysqli_real_escape_string($connection, $_POST['email']);
-    $password_1 = mysqli_real_escape_string($connection, $_POST['password_1']);
-    $password_2 = mysqli_real_escape_string($connection, $_POST['password_2']);
+
+    $level_of_user = 1;
 
     if (empty($username)) {
-        array_push($errors, "Username is required");
+        return 0;
+        //array_push($errors, "Username is required");
     }
 
     if (empty($email)) {
-        array_push($errors, "Email is required");
+        return 0;
+        //array_push($errors, "Email is required");
     }
 
     if (empty($password_1)) {
-        array_push($errors, "Password is required");
+        return 0;
+        //array_push($errors, "Password is required");
     }
 
     if (empty($password_2)) {
-        array_push($errors, "Please, write your passwrod twice");
+        return 0;
+        //array_push($errors, "Please, write your passwrod twice");
     }
 
     if ($password_2 != $password_1) {
-        array_push($errors, "Passwords don't match");
+        return 0;
+        //array_push($errors, "Passwords don't match");
     }
 
-    if (count($errors) == 0) {
+    //if (count($errors) == 0) {
         $password = md5($password_1);
-        $query = "SELECT * FROM users WHERE user_name = '$username' AND email = '$email' AND password = '$password' ";
-        $results = mysqli_query($connection, $query);
 
-        if (mysqli_num_rows($results)) {
-            $_SESSION['username'] = $username;
-            $_SESSION['email'] = $email;
-            $_SESSION['success'] = "You are now logged in";
-            header('location: homepage.php');
-        } else {
-            array_push($errors, "Wrong username or password. Try again");
-        }
-    }
+        $query = "INSERT INTO users (user_name, email, password, level_of_user)
+        values ($username, $email, $password, '1')";
+        $results = mysqli_query($connection, $query);
+        return $results;
+
+    //}
 }
 
 function get_them_quizes($connection){
@@ -133,28 +135,29 @@ function get_them_quizes($connection){
       return $msg;
 }
 
-function create_quiz($connection, $id, $category, $image, $title){
-    $category = mysqli_real_escape_string($connection, $_POST['category']);
-    $image = mysqli_real_escape_string($connection, $_POST['image']);
-    $title = mysqli_real_escape_string($connection, $_POST['title']);
-    
+function create_quiz($connection, $category, $image, $title, $user_id){
+
     if (empty($title)) {
-        array_push($errors, "Title is required");
+        return 0;
+        //array_push($errors, "Title is required");
     }
 
     if (empty($category)) {
-        array_push($errors, "Category is required");
+        return 0;
+        //array_push($errors, "Category is required");
     }
 
     if (empty($image)) {
-        array_push($errors, "Image is required");
+        return 0;
+        //array_push($errors, "Image is required");
     }
 
-    if (count($errors) == 0) { 
+    //if (count($errors) == 0) { 
         $query = "INSERT INTO quizzes(category, image, title, user_id)
-         values ('$category', '$image', '$title', '$id')";
+                    values ($category, $image, $title, $user_id)";
         $results = mysqli_query($connection, $query);
-    }
+        return $results;
+    //}
 }
 
 function edit_quiz($connection, $id, $user_id, $user_lvl, $query){
