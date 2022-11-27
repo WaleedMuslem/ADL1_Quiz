@@ -26,7 +26,14 @@ function db_query($connection, $sql) {
     return $result_set;
 }
 
-function login($connection, $username, $email, $password){
+function confirm_query($result_set) {
+    if(!$result_set) {
+      exit("Database query failed.");
+    }
+}
+
+function login($connection, $email, $password){
+    $username = mysqli_real_escape_string($connection, $_POST['username']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $password = mysqli_real_escape_string($connection, $_POST['password']);
 
@@ -96,27 +103,21 @@ function register($connection, $username, $email, $password_1, $password_2){
     }
 }
 
-function confirm_query($result_set) {
-    if(!$result_set) {
-      exit("Database query failed.");
-    }
-}
-
-function get_them_quizes($connection, $quiz_table, $quiz_columns){
+function get_them_quizes($connection){
     if (empty($connection)) {
         $msg = "Database connection error";
-      } elseif (empty($quiz_columns) || !is_array($quiz_columns)) {
-        $msg = "columns name for news table must be defined in an indexed array";
-      } elseif (empty($quiz_table)) {
-        $msg = "news table is empty";
+      //} elseif (empty($quiz_columns) || !is_array($quiz_columns)) {
+      //  $msg = "Columns name for quiz table must be defined in an indexed array";
+      //} elseif (empty($quiz_table)) {
+      //  $msg = "Quiz table is empty";
       } else {
 
-        array_walk($quiz_columns, function ($val, $key) {
-          $val = 'quizes.' . $val;
-        }); //add quizes. at the beginning of each data in array
-        $columnName = implode(", ", $quiz_columns); // add each data but with (,) in between
-    
-        $query = "SELECT $columnName from $quiz_table ORDER BY news_id  ASC";
+        //array_walk($quiz_columns, function ($val /*$key*/) {
+        //    $val = 'quizes.' . $val;
+        //}); //add quizes. at the beginning of each data in array
+        //$columnName = implode(", ", $quiz_columns); // add each data but with (,) in between
+
+        $query = "SELECT * from quizzes ORDER BY quiz_id  ASC";
         $result = $connection->query($query);
         if ($result == true) {
           if ($result->num_rows > 0) {
@@ -149,14 +150,27 @@ function create_quiz($connection, $id, $category, $image, $title){
         array_push($errors, "Image is required");
     }
 
-    if (count($errors) == 0) {
-        $query = "SELECT * FROM quizzes WHERE category = '$category' AND image = '$image' AND title = '$title' AND user_id = '$id' ";
+    if (count($errors) == 0) { 
+        $query = "INSERT INTO quizzes(category, image, title, user_id)
+         values ('$category', '$image', '$title', '$id')";
         $results = mysqli_query($connection, $query);
     }
 }
 
-function edit_quiz($connection, $id, $user_id){
+function edit_quiz($connection, $id, $user_id, $user_lvl, $query){
     
+}
+
+function get_questions_by_quiz_id($connection, $quiz_id){
+    $query = "SELECT * FROM questions WHERE quiz_id = $quiz_id";
+    $results = mysqli_query($connection, $query);
+    return $results;
+}
+
+function get_da_answer($connection, $question_id){
+    $query = "SELECT * FROM answers WHERE question_id = $question_id";
+    $results = mysqli_query($connection, $query);
+    return $results;
 }
 
 function db_fetch_assoc($result_set) {
