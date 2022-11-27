@@ -67,7 +67,7 @@ function login($connection, $email, $password){
 
 function register($connection, $username, $email, $password_1, $password_2){
 
-    $level_of_user = 1;
+    $level_of_user = 3;
 
     if (empty($username)) {
         return 0;
@@ -98,7 +98,7 @@ function register($connection, $username, $email, $password_1, $password_2){
         $password = md5($password_1);
 
         $query = "INSERT INTO users (user_name, email, password, level_of_user)
-        values ($username, $email, $password, '1')";
+        values ($username, $email, $password, '3')";
         $results = mysqli_query($connection, $query);
         return $results;
 
@@ -160,8 +160,34 @@ function create_quiz($connection, $category, $image, $title, $user_id){
     //}
 }
 
-function edit_quiz($connection, $id, $user_id, $user_lvl, $query){
-    
+function edit_quiz($connection, $user_id, $quiz_id, $category, $image, $title){
+    $user_lvl = mysqli_query($connection, "SELECT level_of_user FROM users WHERE $user_id = user_id limit 1");
+    $quiz_owner_id = mysqli_query($connection, "SELECT user_id FROM quizzes WHERE quiz_id = $quiz_id limit 1");
+    if ($user_lvl == 0 || $quiz_owner_id == $user_id){
+        $query = "UPDATE quizzes set category = '$category', image = '$image', title = '$title'";
+        $results = mysqli_query($connection, $query);
+        return $results;
+    } else {return 0;}
+}
+
+function edit_questions($connection, $user_id, $quiz_id, $content){
+    $user_lvl = mysqli_query($connection, "SELECT level_of_user FROM users WHERE $user_id = user_id limit 1");
+    $quiz_owner_id = mysqli_query($connection, "SELECT user_id FROM quizzes WHERE quiz_id = $quiz_id limit 1");
+    if ($user_lvl == 0 || $quiz_owner_id == $user_id){
+        $query = "UPDATE questions set content = '$content'";
+        $results = mysqli_query($connection, $query);
+        return $results;
+    } else {return 0;}
+}
+
+function edit_answers($connection, $user_id, $quiz_id, $content, $is_right){
+    $user_lvl = mysqli_query($connection, "SELECT level_of_user FROM users WHERE $user_id = user_id limit 1");
+    $quiz_owner_id = mysqli_query($connection, "SELECT user_id FROM quizzes WHERE quiz_id = $quiz_id limit 1");
+    if ($user_lvl == 0 || $quiz_owner_id == $user_id){
+        $query = "UPDATE answers set content = '$content', is_right = '$is_right'";
+        $results = mysqli_query($connection, $query);
+        return $results;
+    } else {return 0;}
 }
 
 function get_questions_by_quiz_id($connection, $quiz_id){
