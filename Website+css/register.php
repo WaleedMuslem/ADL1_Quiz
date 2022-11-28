@@ -12,13 +12,10 @@
             accept="image/png, image/jpeg"
         >
 
+        
         <div class="inputBox">
-         <input type="text" name="firstname" required>
-         <label for = "firstname">First Name</label>
-        </div>
-        <div class="inputBox">
-            <input type="text" name="lastname" required>
-            <label for = "lastname">Last Name</label>
+            <input type="text" name="username" required>
+            <label for = "username">User Name</label>
            </div>
            <div class="inputBox">
             <input type="email" name="email" required>
