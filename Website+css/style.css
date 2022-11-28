@@ -27,19 +27,21 @@ header{
     cursor: pointer;
 }
 .left_section .long{
-    background-color: #8854c0;
+    background-color: white;
     border-radius: 50%;
+    color: #8854c0;
 }
 
 .left_section img{
     width: 16%;
     padding-left: 16px;
+    
 }
 
 .mid_section{
     display: flex;
     align-items: center;
-    margin-left: -9%;
+    margin-left: -30%;
 }
 .mid_section form{
     display: flex;
@@ -80,13 +82,14 @@ header{
     align-items: center;
     margin-left: 10px;
     cursor: pointer;
+    color: white;
 }
 .right_section a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: #8854c0;
     display:inline-flex;
     justify-content: center;
@@ -265,4 +268,15 @@ input.img_pro:hover{
     color: rgb(255, 255, 255);
     color: #8854c0;
     opacity: calc(100%);
+}
+/* Contact US style */
+h1{
+    text-align: center;
+    margin-top:70px ;
+    font-size: xx-large;
+}
+p{
+    text-align: center;
+    margin-top:40px ;
+    font-size: large;
 }

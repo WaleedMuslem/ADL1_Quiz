@@ -1,3 +1,4 @@
+<?php include('functions.php') ?>
 <?php require_once "header.php"; ?>
 
 <body>
