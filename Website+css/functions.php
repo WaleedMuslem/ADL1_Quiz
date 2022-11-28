@@ -59,15 +59,13 @@ function login($connection, $email, $password){
             array_push($errors, "Wrong username or password. Try again");
         }
     }*/
-    $password = md5($password);
+    //$decrypted_password = md5($password);
     $query = "SELECT * from users WHERE email = $email and password = $password";
-    $result = $connection->query($query);
-    return $result;
+    $results = mysqli_query($connection, $query);
+    return $results;
 }
 
-function register($connection, $username, $email, $password_1, $password_2){
-
-    $level_of_user = 3;
+function register($connection, $username, $email, $password){
 
     if (empty($username)) {
         return 0;
@@ -79,26 +77,16 @@ function register($connection, $username, $email, $password_1, $password_2){
         //array_push($errors, "Email is required");
     }
 
-    if (empty($password_1)) {
+    if (empty($password)) {
         return 0;
         //array_push($errors, "Password is required");
     }
 
-    if (empty($password_2)) {
-        return 0;
-        //array_push($errors, "Please, write your passwrod twice");
-    }
-
-    if ($password_2 != $password_1) {
-        return 0;
-        //array_push($errors, "Passwords don't match");
-    }
-
     //if (count($errors) == 0) {
-        $password = md5($password_1);
+        $encoded_password = md5($password);
 
         $query = "INSERT INTO users (user_name, email, password, level_of_user)
-        values ($username, $email, $password, '3')";
+        values ('$username', '$email', '$encoded_password', '3')";
         $results = mysqli_query($connection, $query);
         return $results;
 
