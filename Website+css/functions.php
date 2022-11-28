@@ -59,10 +59,19 @@ function login($connection, $email, $password){
             array_push($errors, "Wrong username or password. Try again");
         }
     }*/
-    //$decrypted_password = md5($password);
-    $query = "SELECT * from users WHERE email = $email and password = $password";
-    $results = mysqli_query($connection, $query);
-    return $results;
+    if (empty($email)) {
+        return 0;
+    }
+
+    if (empty($password)) {
+        return 0;
+    }
+
+    $encrypted_password = md5($password);
+    $query = "SELECT * FROM users WHERE email = '$email' AND password = '$encrypted_password'";
+    $results = $connection->query($query);
+    $row = mysqli_fetch_all($results, MYSQLI_ASSOC);
+    return $row;
 }
 
 function register($connection, $username, $email, $password){
@@ -180,14 +189,16 @@ function edit_answers($connection, $user_id, $quiz_id, $content, $is_right){
 
 function get_questions_by_quiz_id($connection, $quiz_id){
     $query = "SELECT * FROM questions WHERE quiz_id = $quiz_id";
-    $results = mysqli_query($connection, $query);
-    return $results;
+    $results = $connection->query($query);
+    $row = mysqli_fetch_all($results, MYSQLI_ASSOC);
+    return $row;
 }
 
 function get_da_answer($connection, $question_id){
     $query = "SELECT * FROM answers WHERE question_id = $question_id";
-    $results = mysqli_query($connection, $query);
-    return $results;
+    $results = $connection->query($query);
+    $row = mysqli_fetch_all($results, MYSQLI_ASSOC);
+    return $row;
 }
 
 function db_fetch_assoc($result_set) {
