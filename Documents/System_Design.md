@@ -54,7 +54,7 @@ And we will use a random database to finish this program.
 
 ## DataBase Design
 
-![UI plan](../image/Database_diagram.jpg)
+![UI plan](../image/Database_diagram.png)
 
 ## Architectural plan
 The application's design is created via HTML and CSS. 
