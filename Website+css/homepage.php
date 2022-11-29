@@ -34,6 +34,67 @@
                 
             </nav>
         </aside>
+        <main>
+            <div class="qwis-container">
+                <div class="qwis">
+                    <div class="thumbnail">
+                        <img src="imag/123.png" />
+                    </div>
+                    <div class="qwis-details">
+                        <div class="creator-img">
+                            <img src="imag/1234.png" />
+                        </div>
+                        <div class="title">
+                            <a href="" class="qwis-title">
+                                the first qwis
+                            </a>
+                            <a href="" class="qwis-creator">
+                                admin
+                            </a>
+                            <span>1m views • 1 monthe </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qwis">
+                    <div class="thumbnail">
+                        <img src="imag/123.png" />
+                    </div>
+                    <div class="qwis-details">
+                        <div class="creator-img">
+                            <img src="imag/1234.png" />
+                        </div>
+                        <div class="title">
+                            <a href="" class="qwis-title">
+                                the first qwis
+                            </a>
+                            <a href="" class="qwis-creator">
+                                admin
+                            </a>
+                            <span>1m views • 1 monthe </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qwis">
+                        <div class="thumbnail">
+                            <img src="imag/123.png" />
+                        </div>
+                        <div class="qwis-details">
+                            <div class="creator-img">
+                                <img src="imag/1234.png" />
+                            </div>
+                            <div class="title">
+                                <a href="" class="qwis-title">
+                                    the first qwis
+                                </a>
+                                <a href="" class="qwis-creator">
+                                    admin
+                                </a>
+                                <span>1m views • 1 monthe </span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
 
         
     </div>
