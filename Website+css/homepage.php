@@ -38,11 +38,11 @@
             <div class="qwis-container">
                 <div class="qwis">
                     <div class="thumbnail">
-                        <img src="imag/123.png" />
+                        <img src="image/123.png" />
                     </div>
                     <div class="qwis-details">
                         <div class="creator-img">
-                            <img src="imag/1234.png" />
+                            <img src="image/1234.png" />
                         </div>
                         <div class="title">
                             <a href="" class="qwis-title">
@@ -57,11 +57,11 @@
                 </div>
                 <div class="qwis">
                     <div class="thumbnail">
-                        <img src="imag/123.png" />
+                        <img src="image/123.png" />
                     </div>
                     <div class="qwis-details">
                         <div class="creator-img">
-                            <img src="imag/1234.png" />
+                            <img src="image/1234.png" />
                         </div>
                         <div class="title">
                             <a href="" class="qwis-title">
@@ -76,11 +76,11 @@
                 </div>
                 <div class="qwis">
                         <div class="thumbnail">
-                            <img src="imag/123.png" />
+                            <img src="image/123.png" />
                         </div>
                         <div class="qwis-details">
                             <div class="creator-img">
-                                <img src="imag/1234.png" />
+                                <img src="image/1234.png" />
                             </div>
                             <div class="title">
                                 <a href="" class="qwis-title">
