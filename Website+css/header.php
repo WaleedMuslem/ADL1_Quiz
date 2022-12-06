@@ -11,7 +11,7 @@
 <header>
         <div class="left_section">
             <i  class="material-icons-outlined long">menu</i>
-            <a href="homepage.php">
+            <a href="index.php">
             <img src="../image/quiz.png">
             </a>
         </div>
