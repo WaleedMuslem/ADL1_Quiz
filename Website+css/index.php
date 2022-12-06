@@ -13,7 +13,7 @@
                     <i class="material-icons">done</i>
                     <span id="active-span">Result</span>
                 </a>
-                <a href="" class="nav-link">
+                <a href="addquiz.php" class="nav-link">
                     <i class="material-icons">add</i>
                     <span id="active-span">Add Quiz </span>
                 </a>
