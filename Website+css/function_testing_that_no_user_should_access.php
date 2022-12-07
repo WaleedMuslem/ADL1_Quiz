@@ -1,13 +1,14 @@
 <?php
 require_once('functions.php');
 $connection = db_connect();
-$quizes = get_them_quizes($connection);
+$quizes = get_all_quizes($connection);
 $questions = get_questions_by_quiz_id($connection, 1);
-$answers = get_da_answer($connection, 1);
+$answers = get_answer_by_question_id($connection, 1);
 //$make = create_quiz($connection, "3","3","4",1);
 //$eg = register($connection, "6","6","6");
 //$log = login($connection, "'Admin@Admin.com'", "'Admin'");
 $log2 = login($connection, '6', '6');
+$quiz = get_quiz_by_id($connection, 14);
 
 function debug_to_console($data) {
     $output = $data;
@@ -24,3 +25,4 @@ debug_to_console(json_encode($answers));
 //debug_to_console(json_encode($eg));
 //debug_to_console(json_encode($log));
 debug_to_console(json_encode($log2));
+debug_to_console(json_encode($quiz));
