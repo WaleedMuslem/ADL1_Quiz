@@ -1,5 +1,44 @@
+<?php include('functions.php') ?>
 <?php require_once "header.php"; ?>
+<?php
+$conection = db_connect();
+$quizTable = "quizzes";
+$quizColums = ['quiz_id','title','category','image','user_id'];
+$fetchData = fetch_data($conection, $quizTable, $quizColums);
+function fetch_data($conection, $quizTable, $quizColums)
+{
+  if (empty($conection)) {
+    $msg = "Database connection error";
+  } elseif (empty($quizColums) || !is_array($quizColums)) {
+    $msg = "columns name for news table must be defined in an indexed array";
+  } elseif (empty($quizTable)) {
+    $msg = "news table is empty";
+  } else {
 
+    array_walk($quizColums, function (&$val, $key) {
+      $val = 'quizzes.' . $val;
+    }); //add news. at the beginning of each data in array
+    $columnName = implode(", ", $quizColums); // add each data but with (,) in between
+
+    $query = "SELECT $columnName from $quizTable ORDER BY quiz_id  ASC";
+    $result = $conection->query($query);
+    if ($result == true) {
+      if ($result->num_rows > 0) {
+        $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $msg = $row;
+      } else {
+        $msg = "No Data Found";
+      }
+    } else {
+      $msg = mysqli_error($conection);
+    }
+  }
+  return $msg;
+}
+
+
+
+?>
 <body>
     
     <div class="content-area">
@@ -36,63 +75,39 @@
         </aside>
         <main>
             <div class="qwis-container">
+             <?php
+                if (is_array($fetchData)) {
+                 $sn = 1;
+                 foreach ($fetchData as $data) {
+                ?>
                 <div class="qwis">
+                 <?php if ((!empty($data['image']))) {
+                 ?>
                     <div class="thumbnail">
-                        <img src="../image/123.png" />
+                        <a href=""><img src="<?php echo $data['image'] ?? ''; ?>" /></a>
                     </div>
+                 <?php } ?>
                     <div class="qwis-details">
                         <div class="creator-img">
-                            <img src="../image/1234.png" />
+                            <img src="<?php echo $data['image'] ?? ''; ?>" />
                         </div>
                         <div class="title">
                             <a href="" class="qwis-title">
-                                the first qwis
+                                <?php echo $data['title'] ?? ''; ?>
                             </a>
                             <a href="" class="qwis-creator">
-                                admin
+                                <?php echo $data['category'] ?? ''; ?>
                             </a>
-                            <span>1m views • 1 monthe </span>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="qwis">
-                    <div class="thumbnail">
-                        <img src="../image/123.png" />
-                    </div>
-                    <div class="qwis-details">
-                        <div class="creator-img">
-                            <img src="../image/1234.png" />
-                        </div>
-                        <div class="title">
-                            <a href="" class="qwis-title">
-                                the first qwis
-                            </a>
-                            <a href="" class="qwis-creator">
-                                admin
-                            </a>
-                            <span>1m views • 1 monthe </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="qwis">
-                        <div class="thumbnail">
-                            <img src="../image/123.png" />
-                        </div>
-                        <div class="qwis-details">
-                            <div class="creator-img">
-                                <img src="../image/1234.png" />
-                            </div>
-                            <div class="title">
-                                <a href="" class="qwis-title">
-                                    the first qwis
-                                </a>
-                                <a href="" class="qwis-creator">
-                                    admin
-                                </a>
-                                <span>1m views • 1 monthe </span>
-                            </div>
-                        </div>
-                    </div>
+                <?php
+                 $sn++;
+                    }
+                } ?>
+                
+                
             </div>
         </main>
 
