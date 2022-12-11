@@ -299,6 +299,7 @@ main {
 .qwis {
     width: 330px;
     margin-bottom: 40px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
@@ -306,15 +307,20 @@ main {
     width: 100%;
     height: 187px;
     margin-bottom: 12px;
+    text-align: center;
+    
 }
 
 .thumbnail img {
     height: 100%;
-    width: 100%;
+    width: 65%;
+    border-radius: 50%;
 }
 
 .qwis-details {
     display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
 .creator-img img{
@@ -327,9 +333,13 @@ main {
 .title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .title a {
     text-decoration: none;
+    text-align: center;
 }
 .qwis-title {
     color: rgb(3, 3, 3);
@@ -343,6 +353,7 @@ main {
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+    text-align: center;
 }
 
 .qwis-creator, .title span {

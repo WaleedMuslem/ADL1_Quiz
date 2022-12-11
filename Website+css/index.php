@@ -88,9 +88,7 @@ function fetch_data($conection, $quizTable, $quizColums)
                     </div>
                  <?php } ?>
                     <div class="qwis-details">
-                        <div class="creator-img">
-                            <img src="<?php echo $data['image'] ?? ''; ?>" />
-                        </div>
+                        
                         <div class="title">
                             <a href="" class="qwis-title">
                                 <?php echo $data['title'] ?? ''; ?>
