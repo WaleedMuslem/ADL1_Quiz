@@ -166,6 +166,35 @@ function get_quiz_by_id($connection, $quiz_id){
       return $msg;
 }
 
+function get_right_answers($connection, $quiz_id){
+    if (empty($connection)) {
+        $msg = "Database connection error";
+      //} elseif (empty($quiz_columns) || !is_array($quiz_columns)) {
+      //  $msg = "Columns name for quiz table must be defined in an indexed array";
+      //} elseif (empty($quiz_table)) {
+      //  $msg = "Quiz table is empty";
+      } else {
+
+        //array_walk($quiz_columns, function ($val /*$key*/) {
+        //    $val = 'quizes.' . $val;
+        //}); //add quizes. at the beginning of each data in array
+        //$columnName = implode(", ", $quiz_columns); // add each data but with (,) in between
+        $query = "SELECT * from quizzes, answers WHERE $quiz_id = quizzes.quiz_id AND answers.is_right = 1";
+        $result = $connection->query($query);
+        if ($result == true) {
+          if ($result->num_rows > 0) {
+            $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            $msg = $row;
+          } else {
+            $msg = "No Data Found";
+          }
+        } else {
+          $msg = mysqli_error($connection);
+        }
+      }
+      return $msg;
+}
+
 // Creates a quiz and attaches user's id to it. He'll e considered to be a creator
 function create_quiz($connection, $category, $image, $title, $user_id){
 
